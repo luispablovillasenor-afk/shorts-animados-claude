@@ -10,6 +10,9 @@ sin generadores de video con IA.
 Probada en **Alejandro Magno en Gaugamela** (47 mil contra 100 mil, con 100,000 soldados dibujados uno por uno) y en
 **El puente que se cayó por una canción**.
 
+**Nuevo (noviembre 2026): shorts 3D realistas en Blender**, del video «Cómo hacer shorts 3D ultra realistas con Claude»:
+puntadas en el brazo y en la pierna, con piel, herida, hilo y vello que se ven reales. Todo en `realista/`.
+
 ## Qué trae
 | Carpeta | Qué es |
 |---|---|
@@ -18,6 +21,7 @@ Probada en **Alejandro Magno en Gaugamela** (47 mil contra 100 mil, con 100,000 
 | `plantillas/puente/` | El código completo del short del puente (de Mr omi): pueblo, personajes, tinta, desenfoque, color |
 | `plantillas/audio/` | Sonido sintetizado: efectos, música, mezcla con la voz y volumen final |
 | `plantillas/scripts/` | Fotos sueltas, hojas lado a lado, unir el trabajo de los agentes y revisión cuadro por cuadro |
+| `realista/` | Shorts 3D realistas en Blender: guía (`REALISTA.md`), dos escenas completas (brazo y pierna con puntadas), medición de cámara y recursos con su licencia |
 | `herramientas/medir_30fps.py` | Mide cualquier short a 30 cuadros por segundo: hojas, cortes, movimiento de cámara, color |
 | `referencias/BIBLIA_DE_ESTILO.md` | La fórmula del guion y de la imagen medida en 20 shorts de referencia |
 | `referencias/reportes_en/` | Siete reportes con medidas: movimiento, profundidad, texturas, personajes, luz, contornos, color (en inglés) |
@@ -27,6 +31,7 @@ Probada en **Alejandro Magno en Gaugamela** (47 mil contra 100 mil, con 100,000 
 1. Copia esta carpeta a `~/.claude/skills/shorts-animados-3d/` (clónala ahí o baja el ZIP).
 2. Necesitas [Remotion](https://www.remotion.dev/) con `@remotion/three`, Node, Python 3 y ffmpeg
    (las versiones probadas están en `plantillas/alejandro/package_ejemplo.json`).
+   Para lo realista: Blender 5.x y los recursos de `realista/recursos/FUENTES.md`.
 3. En Claude Code dile: *«Usa la skill de shorts animados y hazme un short de…»*.
 
 Claude sigue `SKILL.md`: tema y datos, guion, voz, plan de tomas en `story.ts`, fotos de prueba, medición y render.

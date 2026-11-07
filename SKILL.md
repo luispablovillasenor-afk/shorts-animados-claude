@@ -1,6 +1,6 @@
 ---
 name: shorts-animados-3d
-description: Hace shorts verticales de historia (10–70 s) en el estilo «personajes 2D en un mundo 3D de colores»: personajes planos de cabeza de frijol con contorno, mundo 3D pintado con líneas de tinta negra, cielo saturado, fondo desenfocado, cámara que se desliza y nunca se queda quieta, voz narrando en español y efectos de sonido. Todo se hace con código (three.js dentro de Remotion), sin generadores de video con IA. Probada en «Alejandro Magno en Gaugamela» (47 mil contra 100 mil) y en «El puente que se cayó por una canción». Úsala cuando pidan un short «como el de Alejandro», «como el del puente», «en ese estilo cartoon 3D», un short de historia o ciencia con personajes caricatura en 3D, o digan «usa la skill de shorts animados».
+description: Hace shorts verticales de historia (10–70 s) en el estilo «personajes 2D en un mundo 3D de colores»: personajes planos de cabeza de frijol con contorno, mundo 3D pintado con líneas de tinta negra, cielo saturado, fondo desenfocado, cámara que se desliza y nunca se queda quieta, voz narrando en español y efectos de sonido. Todo se hace con código (three.js dentro de Remotion), sin generadores de video con IA. Probada en «Alejandro Magno en Gaugamela» (47 mil contra 100 mil) y en «El puente que se cayó por una canción». También hace shorts 3D REALISTAS en Blender (piel, heridas, puntadas, cuerpo humano) con código: ver realista/REALISTA.md. Úsala cuando pidan un short «como el de Alejandro», «como el del puente», «en ese estilo cartoon 3D», un short de historia o ciencia con personajes caricatura en 3D, digan «usa la skill de shorts animados», o pidan un short 3D realista («como el de las puntadas», «que no parezca IA», «en Blender»).
 ---
 
 # Shorts animados 3D (three.js + Remotion)
@@ -20,6 +20,13 @@ El estilo se estudió midiendo 20 shorts de un canal de referencia (`referencias
 estudiar el estilo**:
 - Nunca copies sus guiones, personajes ni tomas. Historia, personajes y voz siempre son tuyos.
 - No subas ni publiques sus videos. No digas el nombre del canal en la voz ni en la descripción.
+
+
+## Shorts 3D realistas (Blender)
+Si piden que se vea **real** (piel, heridas, puntadas, cuerpo humano, «render de Blender»), NO uses three.js:
+sigue `realista/REALISTA.md`. Ahí está el proceso, cada pieza (piel, herida, hilo, vello, luz), los errores que ya
+salieron y cómo bajar el tiempo de render. Hay dos ejemplos completos: `realista/blender/puntadas_brazo/` (9 s) y
+`realista/blender/puntadas_pierna/` (31 s). La cámara se mide con `realista/herramientas/camara_fase.py`.
 
 ## Reglas del estilo
 - Voz en español, una sola voz pareja, de corrido: 3.2–3.8 palabras por segundo, casi sin silencios.
