@@ -1,5 +1,18 @@
 # Shorts animados 3D con Claude
 
+## Empieza aquí: elige tu estilo
+
+**Un solo paquete, dos formas de crear videos:**
+
+1. **Realista con Blender:** animaciones con modelos y materiales 3D, como una explicación visual de anatomía. [Mira el ejemplo](ejemplos/animacion-realista.png).
+2. **Caricatura animada:** personajes de caricatura en un mundo 3D de colores, como el video de Alejandro. [Mira el ejemplo](ejemplos/animacion-caricatura.jpg).
+
+No necesitas descargar carpetas por separado. En Claude Code, después de descargar y abrir esta carpeta, pega:
+
+> Lee el archivo SKILL.md de esta carpeta. Soy principiante: muéstrame los dos ejemplos y explícame las dos opciones con palabras sencillas. Ayúdame a escoger y después guíame paso a paso, una pregunta a la vez.
+
+La skill ayuda a preparar el guion, la voz, las escenas y el render, pero requiere herramientas y recursos que dependen del estilo, además de revisar y ajustar los avances. Descargarla no genera un video por sí solo. Algunas opciones de voz pueden tener costo.
+
 La skill gratuita del video **«Cómo hacer shorts animados virales con Claude»** de Crea con LuisPa. En español.
 
 Hace shorts verticales de historia en el estilo «personajes 2D en un mundo 3D de colores»: personajes planos con

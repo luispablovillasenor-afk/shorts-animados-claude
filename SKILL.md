@@ -1,9 +1,26 @@
 ---
 name: shorts-animados-3d
-description: Hace shorts verticales de historia (10–70 s) en el estilo «personajes 2D en un mundo 3D de colores»: personajes planos de cabeza de frijol con contorno, mundo 3D pintado con líneas de tinta negra, cielo saturado, fondo desenfocado, cámara que se desliza y nunca se queda quieta, voz narrando en español y efectos de sonido. Todo se hace con código (three.js dentro de Remotion), sin generadores de video con IA. Probada en «Alejandro Magno en Gaugamela» (47 mil contra 100 mil) y en «El puente que se cayó por una canción». También hace shorts 3D REALISTAS en Blender (piel, heridas, puntadas, cuerpo humano) con código: ver realista/REALISTA.md. Úsala cuando pidan un short «como el de Alejandro», «como el del puente», «en ese estilo cartoon 3D», un short de historia o ciencia con personajes caricatura en 3D, digan «usa la skill de shorts animados», o pidan un short 3D realista («como el de las puntadas», «que no parezca IA», «en Blender»).
+description: >-
+  Crea shorts verticales animados de dos estilos, caricatura 2D en un mundo 3D
+  con Three.js y Remotion, o animación 3D realista con Blender. Úsala cuando
+  pidan la skill de shorts de LuisPa, un video como el de Alejandro o el puente,
+  o animaciones realistas como las de puntadas en Blender.
 ---
 
 # Shorts animados 3D (three.js + Remotion)
+
+## Primero: elige el estilo y acompaña a la persona
+
+Cuando alguien abra la skill por primera vez o no haya elegido un estilo, explica de forma breve que este paquete incluye dos caminos y muestra los dos ejemplos **antes de pedir que elija**:
+
+1. **Animación 3D realista con Blender**: escenas creadas con modelos, materiales, luces y cámara 3D, por ejemplo animaciones explicativas de anatomía. [Ver ejemplo realista](ejemplos/animacion-realista.png).
+2. **Caricatura animada**: personajes planos de caricatura en escenarios 3D coloridos. Se crea con código usando Three.js y Remotion. [Ver ejemplo de caricatura](ejemplos/animacion-caricatura.jpg).
+
+Si el entorno permite mostrar imágenes, muestra ambos archivos directamente en el chat; de lo contrario, proporciona los enlaces o rutas completas a estos archivos locales para que la persona los abra. No afirmes que se mostraron si el entorno no pudo hacerlo. Pregunta «¿Cuál estilo quieres: realista con Blender o caricatura?» y espera la respuesta antes de instalar o preparar herramientas. Si ya indicó claramente el estilo, respétalo y evita volver a preguntar.
+
+Habla en español sencillo. Pregunta una cosa por vez cuando la persona sea principiante, explica cualquier término técnico y acompaña la instalación sin asumir que sabe programar. Comprueba sistema operativo, programas disponibles y requisitos de la ruta elegida; explica las opciones y posibles costos antes de que el usuario elija proveedores externos de voz u otros servicios. No solicites claves en el chat. El paquete contiene plantillas, no un video terminado ni un proyecto que funcione automáticamente al descargarlo.
+
+Después pide la idea y la duración. Ayuda a preparar y revisar guion, voz y escenas; genera avances y deja espacio para que la persona indique correcciones. Continúa hacia el render y verifica que se haya producido un MP4 con imagen y audio cuando las herramientas y recursos estén disponibles. No prometas calidad o resultado automático: si falta algo, explica qué está pendiente y cómo resolverlo. Sigue `realista/REALISTA.md` solo para Blender; para caricatura sigue el proceso de abajo.
 
 Skill de **Crea con LuisPa**, en español. Está basada en la skill gratuita
 [claude-animated-shorts](https://github.com/mromidev/claude-animated-shorts) de Mr omi (licencia MIT): el motor,
