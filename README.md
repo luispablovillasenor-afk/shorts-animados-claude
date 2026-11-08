@@ -7,9 +7,16 @@
 1. **Realista con Blender:** animaciones con modelos y materiales 3D, como una explicación visual de anatomía. [Mira el ejemplo](ejemplos/animacion-realista.png).
 2. **Caricatura animada:** personajes de caricatura en un mundo 3D de colores, como el video de Alejandro. [Mira el ejemplo](ejemplos/animacion-caricatura.jpg).
 
-No necesitas descargar carpetas por separado. En Claude Code, después de descargar y abrir esta carpeta, pega:
+No necesitas descargar carpetas por separado. La descarga por sí sola no abre Claude ni instala la skill:
+
+1. En esta página, pulsa el botón verde **Code** y luego **Download ZIP**.
+2. Abre el ZIP descargado. En Mac, haz doble clic; en Windows, haz clic derecho y elige **Extraer todo**. Conserva junta toda la carpeta extraída.
+3. Abre **Claude Code** y selecciona la carpeta extraída como carpeta de trabajo. Si necesitas ayuda para encontrar esa opción, dile a Claude qué computadora tienes y pídele instrucciones paso a paso.
+4. En la conversación de Claude Code pega:
 
 > Lee el archivo SKILL.md de esta carpeta. Soy principiante: muéstrame los dos ejemplos y explícame las dos opciones con palabras sencillas. Ayúdame a escoger y después guíame paso a paso, una pregunta a la vez.
+
+La imagen realista incluye una representación de una herida con puntadas. Si Claude no puede mostrar las imágenes en el chat, abre la carpeta `ejemplos` y pulsa cada imagen para verla.
 
 La skill ayuda a preparar el guion, la voz, las escenas y el render, pero requiere herramientas y recursos que dependen del estilo, además de revisar y ajustar los avances. Descargarla no genera un video por sí solo. Algunas opciones de voz pueden tener costo.
 
@@ -40,12 +47,14 @@ puntadas en el brazo y en la pierna, con piel, herida, hilo y vello que se ven r
 | `referencias/reportes_en/` | Siete reportes con medidas: movimiento, profundidad, texturas, personajes, luz, contornos, color (en inglés) |
 | `referencias/hojas/` y `referencias/cuadros/` | 20 hojas de 60 cuadros (1,200 cuadros) y 38 cuadros completos para comparar |
 
-## Cómo instalarla
-1. Copia esta carpeta a `~/.claude/skills/shorts-animados-3d/` (clónala ahí o baja el ZIP).
-2. Necesitas [Remotion](https://www.remotion.dev/) con `@remotion/three`, Node, Python 3 y ffmpeg
-   (las versiones probadas están en `plantillas/alejandro/package_ejemplo.json`).
-   Para lo realista: Blender 5.x y los recursos de `realista/recursos/FUENTES.md`.
-3. En Claude Code dile: *«Usa la skill de shorts animados y hazme un short de…»*.
+## Herramientas e instalación
+
+Pídele primero a Claude que revise qué tienes instalado y que te explique cada paso. No necesitas instalar las herramientas de los dos estilos si solo vas a usar uno.
+
+- **Caricatura:** Node, Python 3, ffmpeg y un proyecto de [Remotion](https://www.remotion.dev/) con `@remotion/three`. El archivo `plantillas/alejandro/package_ejemplo.json` es una referencia de dependencias; no es un proyecto listo para ejecutar.
+- **Realista:** Blender 5.x y los recursos que requiera la escena; consulta `realista/recursos/FUENTES.md`. Algunos recursos se descargan por separado. Los scripts de ejemplo renderizan imagen a MP4, pero la voz y la música requieren pasos adicionales.
+
+Para que Claude encuentre la skill en otras conversaciones, pídele que te ayude a instalar la carpeta completa en el directorio de skills de tu sistema. En macOS/Linux, el README anterior indicaba `~/.claude/skills/shorts-animados-3d/`; en Windows pídele que compruebe la ruta para tu instalación. Primero puedes usar el mensaje de arriba desde la carpeta extraída, sin mover archivos.
 
 Claude sigue `SKILL.md`: tema y datos, guion, voz, plan de tomas en `story.ts`, fotos de prueba, medición y render.
 

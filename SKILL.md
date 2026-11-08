@@ -13,7 +13,7 @@ description: >-
 
 Cuando alguien abra la skill por primera vez o no haya elegido un estilo, explica de forma breve que este paquete incluye dos caminos y muestra los dos ejemplos **antes de pedir que elija**:
 
-1. **Animación 3D realista con Blender**: escenas creadas con modelos, materiales, luces y cámara 3D, por ejemplo animaciones explicativas de anatomía. [Ver ejemplo realista](ejemplos/animacion-realista.png).
+1. **Animación 3D realista con Blender**: escenas creadas con modelos, materiales, luces y cámara 3D, por ejemplo animaciones explicativas de anatomía. El ejemplo muestra una herida con puntadas: avisa antes de mostrarlo. [Ver ejemplo realista](ejemplos/animacion-realista.png).
 2. **Caricatura animada**: personajes planos de caricatura en escenarios 3D coloridos. Se crea con código usando Three.js y Remotion. [Ver ejemplo de caricatura](ejemplos/animacion-caricatura.jpg).
 
 Si el entorno permite mostrar imágenes, muestra ambos archivos directamente en el chat; de lo contrario, proporciona los enlaces o rutas completas a estos archivos locales para que la persona los abra. No afirmes que se mostraron si el entorno no pudo hacerlo. Pregunta «¿Cuál estilo quieres: realista con Blender o caricatura?» y espera la respuesta antes de instalar o preparar herramientas. Si ya indicó claramente el estilo, respétalo y evita volver a preguntar.
