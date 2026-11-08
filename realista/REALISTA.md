@@ -12,6 +12,8 @@ Ejemplos completos que vienen aquí:
 - Python 3 con `opencv-python` y `numpy` (para medir la cámara), y ffmpeg.
 - Los recursos de `recursos/FUENTES.md`. Corre `recursos/bajar_recursos.sh`; a Nathan lo bajas a mano.
 
+La selección de Cycles intenta Metal en Mac y OptiX, CUDA, HIP o OneAPI en otros sistemas, según los dispositivos que Blender detecte; si no encuentra GPU compatible, usa CPU y lo informa. La implementación se probó con dispositivos simulados, no con todas las tarjetas o versiones de Windows. Los scripts `render.sh` de ejemplo son para macOS/Linux: en Windows Claude debe preparar y probar un lanzador `.bat` adaptado al proyecto, como indica `SKILL.md`.
+
 ## Cómo se usa
 ```bash
 cd realista/blender/puntadas_brazo

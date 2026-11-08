@@ -22,6 +22,14 @@ Habla en español sencillo. Pregunta una cosa por vez cuando la persona sea prin
 
 Después pide la idea y la duración. Ayuda a preparar y revisar guion, voz y escenas; genera avances y deja espacio para que la persona indique correcciones. Continúa hacia el render y verifica que se haya producido un MP4 con imagen y audio cuando las herramientas y recursos estén disponibles. No prometas calidad o resultado automático: si falta algo, explica qué está pendiente y cómo resolverlo. Sigue `realista/REALISTA.md` solo para Blender; para caricatura sigue el proceso de abajo.
 
+### Entrega sencilla en Mac y Windows
+
+Estas instrucciones son para ti, Claude: acompaña a la persona sin obligarla a leer archivos técnicos. Detecta su sistema operativo y pregúntale dónde quiere guardar el proyecto (por ejemplo, una carpeta de su Escritorio); usa la ubicación real que te indique, sin suponer que el Escritorio se llama `Desktop` ni que está fuera de OneDrive o iCloud. Conserva juntos los archivos necesarios, la narración, el proyecto editable y la salida, sin copiar credenciales ni archivos ajenos. Si ya entregó guion o audio, úsalos y no se los vuelvas a pedir. Avisa si falta algo imprescindible.
+
+Para Windows prepara en la carpeta elegida un `RENDERIZAR.bat`; para Mac, un `RENDERIZAR.command` ejecutable. Adáptalo al proyecto y al motor seleccionado: Blender para realista; Remotion para caricatura. Al hacer doble clic debe comprobar que existen los programas y archivos requeridos, iniciar el render, indicar el progreso, detenerse y mostrar el error si algo falla, y conservar la ventana abierta con la ruta del resultado. Usa rutas relativas al propio proyecto y admite espacios. No borres proyectos ni cuadros existentes; evita mezclar cuadros de renders distintos. Crea el MP4 final con la narración cuando exista y comprueba imagen, audio y duración. Si hay un problema no lo anuncies como terminado.
+
+En Blender detecta y prueba la GPU disponible: Metal en Mac; OptiX o CUDA para NVIDIA en Windows, HIP para AMD y OneAPI para Intel, según soporte real de la versión de Blender. Confirma en el registro el dispositivo que realmente se usa; si no funciona, explica la causa y ofrece CPU, sin afirmar que la GPU funcionó. La exportación de Remotion es distinta: no garantices que toda la codificación use la tarjeta gráfica. Antes de entregar el lanzador, ejecuta una prueba pequeña cuando el entorno lo permita; si no puedes probarlo en el sistema del usuario, dilo claramente. El tiempo para preparar y renderizar varía, no prometas diez minutos.
+
 Skill de **Crea con LuisPa**, en español. Está basada en la skill gratuita
 [claude-animated-shorts](https://github.com/mromidev/claude-animated-shorts) de Mr omi (licencia MIT): el motor,
 las plantillas del puente y los reportes de medición son de él. Lo nuevo de esta versión: todo en español, el short

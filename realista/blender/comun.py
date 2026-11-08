@@ -1,5 +1,5 @@
 # Piezas comunes para las escenas de la réplica (Blender 5.2)
-import bpy, os, math
+import bpy, os, math, sys
 from mathutils import Vector
 RAIZ = os.environ.get('REALISTA_RAIZ', os.path.dirname(os.path.dirname(os.path.abspath(__file__))))  # carpeta realista/
 NATHAN = RAIZ + '/recursos/renderpeople/nathan'
@@ -48,13 +48,33 @@ def material_piel(geo, sss=0.25):
     nt.links.new(b.outputs['BSDF'], o.inputs['Surface'])
     return mat
 
+def configurar_dispositivo_cycles(sc):
+    """Selecciona una GPU compatible y comunica la selección; usa CPU si falla."""
+    prefs = bpy.context.preferences.addons['cycles'].preferences
+    opciones = ('METAL',) if sys.platform == 'darwin' else ('OPTIX', 'CUDA', 'HIP', 'ONEAPI')
+    for backend in opciones:
+        try:
+            prefs.compute_device_type = backend
+            prefs.get_devices()
+            gpus = [d for d in prefs.devices if d.type == backend]
+            if not gpus:
+                continue
+            for dispositivo in prefs.devices:
+                dispositivo.use = dispositivo in gpus
+            sc.cycles.device = 'GPU'
+            print('Cycles: GPU seleccionada:', backend, ', '.join(d.name for d in gpus))
+            return backend
+        except (TypeError, ValueError, RuntimeError, AttributeError) as error:
+            print('Cycles:', backend, 'no disponible:', error)
+    sc.cycles.device = 'CPU'
+    print('Cycles: ninguna GPU compatible detectada; se usará CPU.')
+    return 'CPU'
+
+
 def render_vertical(res=0.5, muestras=64):
     sc = bpy.context.scene
     sc.render.engine = 'CYCLES'
-    sc.cycles.device = 'GPU'
-    prefs = bpy.context.preferences.addons['cycles'].preferences
-    prefs.compute_device_type = 'METAL'; prefs.get_devices()
-    for d in prefs.devices: d.use = True
+    configurar_dispositivo_cycles(sc)
     sc.cycles.samples = muestras; sc.cycles.use_denoising = True
     sc.render.resolution_x = 1080; sc.render.resolution_y = 1920; sc.render.resolution_percentage = int(res*100)
     sc.render.fps = 30
