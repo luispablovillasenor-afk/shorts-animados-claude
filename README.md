@@ -4,8 +4,8 @@
 
 **Un solo paquete, dos formas de crear videos:**
 
-1. **Realista con Blender:** animaciones con modelos y materiales 3D, como una explicación visual de anatomía. [Mira el ejemplo](ejemplos/animacion-realista.png).
-2. **Caricatura animada:** personajes de caricatura en un mundo 3D de colores, como el video de Alejandro. [Mira el ejemplo](ejemplos/animacion-caricatura.jpg).
+1. **Realista con Blender:** animaciones con modelos y materiales 3D, como una explicación visual de anatomía. [Ver imagen](ejemplos/animacion-realista.png) · [Ver video de puntadas](ejemplos/video-blender-puntadas.mp4) (vista previa de 9 segundos, sin audio; muestra una herida).
+2. **Caricatura animada:** personajes de caricatura en un mundo 3D de colores. [Ver imagen](ejemplos/animacion-caricatura.jpg) · [Ver video de Alejandro Magno](ejemplos/video-alejandro-caricatura.mp4) (9,8 segundos, con audio).
 
 No necesitas descargar carpetas por separado. La descarga por sí sola no abre Claude ni instala la skill:
 
@@ -16,7 +16,7 @@ No necesitas descargar carpetas por separado. La descarga por sí sola no abre C
 
 > Lee el archivo SKILL.md de esta carpeta. Soy principiante: muéstrame los dos ejemplos y explícame las dos opciones con palabras sencillas. Ayúdame a escoger y después guíame paso a paso, una pregunta a la vez.
 
-La imagen realista incluye una representación de una herida con puntadas. Si Claude no puede mostrar las imágenes en el chat, abre la carpeta `ejemplos` y pulsa cada imagen para verla.
+El ejemplo realista incluye una representación de una herida con puntadas. Si Claude no puede mostrar los ejemplos en el chat, abre la carpeta `ejemplos` y pulsa cada imagen o video para verlo.
 
 La skill ayuda a preparar el guion, la voz, las escenas y el render, pero requiere herramientas y recursos que dependen del estilo, además de revisar y ajustar los avances. Descargarla no genera un video por sí solo. Algunas opciones de voz pueden tener costo.
 
